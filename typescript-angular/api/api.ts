@@ -1,0 +1,11 @@
+export * from './default.service';
+import { DefaultService } from './default.service';
+export * from './mapLayerVectorController.service';
+import { MapLayerVectorControllerService } from './mapLayerVectorController.service';
+export * from './mapMarkerController.service';
+import { MapMarkerControllerService } from './mapMarkerController.service';
+export * from './mapServerController.service';
+import { MapServerControllerService } from './mapServerController.service';
+export * from './mapToolsController.service';
+import { MapToolsControllerService } from './mapToolsController.service';
+export const APIS = [DefaultService, MapLayerVectorControllerService, MapMarkerControllerService, MapServerControllerService, MapToolsControllerService];
