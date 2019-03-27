@@ -135,7 +135,7 @@ export class MapToolsControllerService {
 
         // to determine the Accept header
         let httpHeaderAccepts: string[] = [
-            'application/x-www-form-urlencoded'
+            'application/JSON'
         ];
         const httpHeaderAcceptSelected: string | undefined = this.configuration.selectHeaderAccept(httpHeaderAccepts);
         if (httpHeaderAcceptSelected != undefined) {
