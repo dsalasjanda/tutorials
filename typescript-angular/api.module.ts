@@ -4,21 +4,13 @@ import { HttpClient } from '@angular/common/http';
 
 
 import { DefaultService } from './api/default.service';
-import { MapLayerVectorControllerService } from './api/mapLayerVectorController.service';
-import { MapMarkerControllerService } from './api/mapMarkerController.service';
-import { MapServerControllerService } from './api/mapServerController.service';
-import { MapToolsControllerService } from './api/mapToolsController.service';
 
 @NgModule({
   imports:      [],
   declarations: [],
   exports:      [],
   providers: [
-    DefaultService,
-    MapLayerVectorControllerService,
-    MapMarkerControllerService,
-    MapServerControllerService,
-    MapToolsControllerService ]
+    DefaultService ]
 })
 export class ApiModule {
     public static forRoot(configurationFactory: () => Configuration): ModuleWithProviders {
